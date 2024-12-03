@@ -8,8 +8,8 @@ const Header = () => {
         <img className="w-28" src={Logo} alt="Logo" />
         <ul className="flex flex-row space-x-8">
           <li>Home</li>
+          <li>Cart</li>
           <li>About</li>
-          <li>Contact</li>
         </ul>
       </nav>
     </header>

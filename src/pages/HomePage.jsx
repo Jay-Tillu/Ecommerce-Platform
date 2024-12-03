@@ -23,8 +23,7 @@ const HomePage = () => {
       const response = await axios.get(url);
       setData(response.data);
     } catch (error) {
-      setError();
-      console.log(`"Failed to fetch data. Please try again later." ${error}`);
+      setError(`Failed to fetch data. Please try again later. ${error}`);
     } finally {
       setLoading(false);
     }
