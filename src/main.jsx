@@ -7,6 +7,7 @@ import CartPage from "./pages/CartPage";
 import AboutPage from "./pages/AboutPage";
 import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
+import ProductDetails from "./pages/ProductDetails";
 
 const appRouter = createBrowserRouter([
   {
@@ -26,14 +27,16 @@ const appRouter = createBrowserRouter([
         path: "/about",
         element: <AboutPage />,
       },
+      {
+        path: "/product/:productId",
+        element: <ProductDetails />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={appRouter}>
-      <App />
-    </RouterProvider>
+    <RouterProvider router={appRouter} />
   </StrictMode>
 );

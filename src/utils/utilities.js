@@ -1,3 +1,5 @@
+
+
 // Utility function to convert price
 export const convertCurrency = (amount, conversionRate = 85) => {
   return (amount * conversionRate).toFixed(2);

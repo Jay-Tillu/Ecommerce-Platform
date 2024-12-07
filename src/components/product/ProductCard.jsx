@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
-import { truncateTitle } from "@/utils/constants";
+import { truncateTitle } from "@/utils/utilities";
 
 const ProductCard = ({ productTitle, productPrice, productImage }) => {
   const truncatedTitle = truncateTitle(productTitle);
